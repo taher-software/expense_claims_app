@@ -1,24 +1,82 @@
-# README
+#   Expense-Claims
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+>  Expense-Claims is a small web application where everyone can add expense: there are  a list of fields  associated with an expense, so that any employee can approve or reject an expense request.
+This application allow user :
 
-Things you may want to cover:
+   - Add new claim request
+   - Update an existant request
+   - Approve, reject an existant request
+   - Delete an existant request
+   - Display bar chart for expense stats per month
 
-* Ruby version
+<p align="center">
+  <img src="./app/assets/images/app.gif">
+</p>
 
-* System dependencies
 
-* Configuration
+## Built With
+- Ruby
+- git
+- Rails
+- postgresql
 
-* Database creation
+## Live Demo
 
-* Database initialization
+[Live Demo Link](https://optimize-my-budget.herokuapp.com/)
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running follow these simple example steps.
+- Open terminal
+- Clone this project by the command: 
 
-* Deployment instructions
+```
+$ git clone git@github.com:taher-software/expense_claims_app.git
+```
 
-* ...
+- Then go to the main folder using the next command:
+
+```
+$ cd expense_claims_app.
+```
+- Install Ruby gems using this command line:
+
+```
+$ bundle install in your console.
+```
+
+- set db credentials: 
+```
+export PGSQL_USERNAME='postgresql_username'
+export PGSQL_PWD='postgresql_password'
+```
+- create db by: 
+```
+rails db:create
+```
+- run migration by: 
+```
+rails db:migrate
+```
+- populate db by: 
+```
+rails db:seed
+```
+- Finaly , run <b> rails s </b> to run the application.
+
+## Authors
+
+👤 **Taher Haggui**
+
+- GitHub: [@Taher-web-dev](https://github.com/Taher-web-dev)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
