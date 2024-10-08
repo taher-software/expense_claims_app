@@ -1,0 +1,36 @@
+<table class='recap-tab'>
+  <thead>
+    <tr class='tr-header'>
+        <th>Status </th>
+        <th>Claimer </th>     
+        <th>Description </th>
+        <th>Date </th>
+        <th>Amount </th>
+        <th>Actions </th>
+    </tr>
+  </thead>
+ <% expenses.each do |expense| %>
+  <%= render "form", locals={"action_name": "Edit", "expense": expense, "all_names": names} %>
+  <tr>
+    <td><button class='st-bt'  style="
+    background-color: 
+      <%= case expense.status
+            when 'pending' then 'rgb(214,186,88)'
+            when 'rejected' then 'rgb(214,77,71)'
+            when 'approved' then 'rgb(30,185,128)'
+            else 'gray'
+          end %>;" disabled><%= expense.status%> </button></td>
+    <td><%=expense.employee.name %></td>
+    <td class='desc'><%=expense.description %></td>
+    <td><%=expense.date %></td>
+    <td><%=expense.amount %>€</td>
+    <td class="bt-wrapper">
+        <%= button_to 'APPROVE',approve_path(expense),method: :put,  class:"action-bt app-bt" %>
+        <%= button_to 'REJECT',reject_path(expense),method: :put, class:"action-bt rej-bt" %>
+        <button class="action-bt edit-bt"> UPDATE </button>
+        <%= button_to 'DELETE',expense_path(expense),method: :delete, class:"action-bt del-bt" %>
+    </td>
+  </tr>
+  
+  <% end %>
+ </table>

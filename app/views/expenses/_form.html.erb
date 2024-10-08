@@ -1,0 +1,29 @@
+<div class='<%= case action_name 
+            when "New" then "new-form"
+            else "edit-form"
+          end %>'>
+    <h2> <%=action_name %> Expense Request</h2>
+    <%= form_with model: expense do |form| %>
+        <div class='input-container'>
+            <%= form.label :claimer, class:'form-label' %>
+            <%= form.select :claimer, all_names,{},{class:'form-input',disabled: (action_name != 'New')} %>
+        </div>
+        <div class='input-container'>
+            <%= form.label :date, class:'form-label' %>
+            <%= form.date_field :date, class:'form-input' %>
+        </div>
+        <div class='input-container'>
+            <%= form.label :description, class:'form-label' %>
+            <%= form.text_area :description, class:'form-input' %>
+        </div>
+        <div class='input-container'>
+            <%= form.label :amount, class:'form-label' %>
+            <%= form.number_field :amount, class:'form-input' %>
+        </div>
+        <div class='btn-wrapper'>
+            <%= form.submit %>
+        </div>
+
+    <% end %>
+    <button class='cancel-bt'> CANCEL </button>
+</div>

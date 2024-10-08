@@ -1,0 +1,25 @@
+<div class='container'>
+    
+
+    <div class="side-bar">
+        <h2 class='company-name'>Titus Inc </h2>
+        <p class="seperator extra-margin"> . . . . . </p>
+        <%= link_to 'ALL EXPENSES', root_path(filter: 'all'), class:"option filter" %>
+        <%= link_to 'PENDING APPROVAL', root_path(filter: 'pending'), class:"option filter" %>
+        <%= link_to 'APPROVED EXPENSES', root_path(filter: 'approved'), class:"option filter" %>
+        <%= link_to 'REJECTED EXPENSES', root_path(filter: 'rejected'), class:"option filter" %>
+        <p class="seperator"> . . . . . </p>
+        <%= link_to 'STATS', expenses_stats_path, class:"option filter" %>
+    </div>
+    <div class="dash">
+        <div class="dash-header">
+            <h1 >Expense Request Dashboard</h1>
+            <button id='add-request'> <%= image_tag("icon.png") %> NEW REQUETE </>
+        </div>
+        <%= render "exrecaps", locals={"expenses": @expenses || [],"names": @names} %>
+        
+    </div>
+    <%= render "form", locals={"action_name": "New", "expense": @expense, "all_names": @names} %>
+</div>
+
+

@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(25, 28, 26);
+    display: flex;
+    height: 100vh;
+
+}
+
+.company-name {
+    color: white;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    align-items: center;
+    background-color: rgb(25, 36, 31);
+    width: 15%;
+}
+
+.seperator {
+    color: green;
+    font-weight: 800;
+    font-weight: 800;
+    margin-top: 0;
+}
+
+.extra-margin {
+    margin-top: 10px;
+}
+
+.option {
+    font-family: 'Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30.4px;
+    color: rgb(150, 150, 150);
+    margin-bottom: 0;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.dash-header {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dash {
+    width: 85%;
+}
+
+.dash-header h1 {
+    color: white;
+    font-family: 'Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+}
+
+.dash-header button {
+    background-color: rgb(25, 28, 26);
+    color: white;
+    border: 1px solid green;
+    height: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: content-box;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.edit-form {
+    background-color: rgb(24, 36, 30);
+    position: absolute;
+    z-index: 999;
+    width: 80%;
+    left: 10%;
+    top: 5%;
+    display: none;
+}
+
+.new-form {
+    background-color: rgb(24, 36, 30);
+    position: absolute;
+    z-index: 999;
+    width: 80%;
+    left: 10%;
+    top: 5%;
+    display: none;
+}
+
+.form-container h2 {
+    color: white;
+    font-family: 'Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif';
+    margin-left: 2.5%;
+}
+
+.form-label {
+    color: rgb(228, 233, 229);
+    margin-left: 2.5%;
+    width: 20%;
+}
+
+.form-input {
+    background-color: rgb(76, 73, 66);
+    width: 50%;
+    height: 25px;
+    color: rgb(228, 233, 229)
+}
+
+.input-container {
+    display: flex;
+    margin-top: 2.5%;
+}
+
+.btn-wrapper {
+    margin-top: 2.5%;
+    margin-left: 70%;
+    margin-bottom: 5%;
+}
+
+.cancel-bt {
+    position: absolute;
+    bottom: 52px;
+    right: 100px;
+}
+
+
+.recap-tab {
+    margin-left: 10%;
+    width: 80%;
+    background-color: rgb(64, 73, 67);
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: 2px solid rgb(138, 147, 140);
+
+}
+
+th {
+    color: rgb(228, 233, 229);
+    border-right: 1px solid rgb(61, 82, 72);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30.4px;
+    text-align: left;
+    padding-left: 1.25%;
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+tr td {
+    border-right: 1px solid rgb(61, 82, 72);
+
+    border-bottom: 1px solid rgb(64, 73, 67);
+
+    text-align: left;
+    padding-left: 1.25%;
+}
+
+.desc {
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30.4px;
+    color: rgb(51, 115, 89);
+}
+
+td {
+    font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30.4px;
+    color: rgb(228, 233, 229);
+    padding: 5px 0;
+}
+
+.st-bt {
+    padding: 5px 3px;
+    border-radius: 4px;
+    color: white;
+}
+
+.action-bt {
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(64, 73, 67);
+    font-weight: 550;
+    border-radius: 8px;
+}
+
+.app-bt {
+    background-color: green;
+    border-color: green;
+}
+
+.rej-bt {
+    background-color: red;
+    border-color: red;
+}
+
+tr {
+    padding: 5px 0;
+}
+
+.bt-wrapper {
+    display: flex;
+    margin-left: 5px;
+    justify-content: space-around;
+}
+
+.edit-bt {
+    background-color: rgb(76, 68, 126);
+    border-color: rgb(76, 68, 126);
+}
+
+.del-bt {
+    background-color: rgb(241, 115, 59);
+    border-color: rgb(241, 115, 59);
+}
+
+.filter {
+    text-decoration: none;
+}
+
+.stats-container {
+    background-color: rgb(25, 28, 26);
+    height: 100vh;
+    margin-top: 0;
+}
+
+.chart-wrapper {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.stats-container h1 {
+    padding-top: 5%;
+    margin-left: 10%;
+    color: white;
+    font-family: 'Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+}
+
+.back-icon {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+
+}

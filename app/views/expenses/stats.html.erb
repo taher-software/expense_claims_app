@@ -1,0 +1,7 @@
+<div class='stats-container'>
+    <%= link_to image_tag("left-arrow.png"), root_path, class: 'back-icon' %>
+    <h1 >Expenses Per Month</h1>
+    <div class='chart-wrapper'>
+        <%= bar_chart @expenses_per_month_chart_data %>
+    </div>
+</div>
