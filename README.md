@@ -20,9 +20,6 @@ This application allow user :
 - Rails
 - postgresql
 
-## Live Demo
-
-[Live Demo Link](https://optimize-my-budget.herokuapp.com/)
 
 ## Getting Started
 
